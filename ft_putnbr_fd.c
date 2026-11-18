@@ -33,8 +33,16 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-/* int main() {
-	ft_putnbr_fd(__INT32_MAX__, 1);
-	ft_putnbr_fd(-__INT32_MAX__-1, 1);
-	ft_putnbr_fd(0, 1);
-} */
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	ft_putnbr_fd(-2147483648, 1);
+	ft_putchar_fd('\n', 1);
+	return (0);
+}
+*/

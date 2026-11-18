@@ -17,10 +17,16 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
-/* int	main(void)
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
 {
 	ft_putchar_fd('A', 1);
-	ft_putchar_fd('B', 2);
-	ft_putchar_fd('C', 1);
+	ft_putchar_fd('\n', 1);
 	return (0);
-} */
+}
+*/

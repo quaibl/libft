@@ -26,3 +26,23 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last = ft_lstlast(*lst);
 	last->next = new;
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	t_list	*head;
+
+	head = ft_lstnew("first");
+	ft_lstadd_back(&head, ft_lstnew("second"));
+	printf("%s (expected second)\n",
+		(char *)head->next->content);
+	free(head->next);
+	free(head);
+	return (0);
+}
+*/

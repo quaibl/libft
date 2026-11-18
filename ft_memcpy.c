@@ -29,19 +29,19 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
 /*
+#include "libft.h"
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	dest[10];
+	char	destination[6];
 
-	memset(dest, 0, sizeof(dest));
-	ft_memcpy(dest, "Hello", 3);
-	printf("%s\n", dest);
-	memcpy(dest, "Hello", 3);
-	printf("%s\n", dest);
+	ft_memcpy(destination, "hello", 6);
+	printf("%s (expected hello)\n", destination);
 	return (0);
 }
- */
+*/

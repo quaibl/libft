@@ -16,3 +16,17 @@ int	ft_isprint(int c)
 {
 	return ((c >= 32 && c <= 126));
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	printf("space: %d, newline: %d (expected 1, 0)\n",
+		ft_isprint(' '), ft_isprint('\n'));
+	return (0);
+}
+*/

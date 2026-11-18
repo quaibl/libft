@@ -17,3 +17,17 @@ int	ft_toupper(int c)
 		c = c - 32;
 	return (c);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	printf("%c, %c (expected A, 7)\n",
+		ft_toupper('a'), ft_toupper('7'));
+	return (0);
+}
+*/

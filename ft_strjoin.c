@@ -39,15 +39,21 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (result);
 }
 
+/* Manual test: remove the comment delimiters only when testing. */
 /*
+#include "libft.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char s1[] = "Hello ";
-	char s2[] = "World!";
+	char	*joined;
 
-	char *res = ft_strjoin(s1, s2);
-
-	puts(res);
-} */
+	joined = ft_strjoin("Hello ", "42!");
+	if (!joined)
+		return (1);
+	printf("%s (expected Hello 42!)\n", joined);
+	free(joined);
+	return (0);
+}
+*/

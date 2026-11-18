@@ -23,29 +23,25 @@ char	*ft_strdup(const char *src)
 	dup = malloc(len + 1);
 	if (!dup)
 		return (NULL);
-	ft_memcpy(dup, src, len);
+	ft_memcpy(dup, src, len + 1);
 	return (dup);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	*src;
-	char	*dup;
+	char	*duplicate;
 
-	src = "Hello, 42!";
-	dup = ft_strdup(src);
-	if (!dup)
-	{
-		printf("Memory allocation failed\n");
+	duplicate = ft_strdup("Hello 42!");
+	if (!duplicate)
 		return (1);
-	}
-	printf("Original: %s\n", src);
-	printf("Duplicate: %s\n", dup);
-	printf("Original address: %p\n", (void *)src);
-	printf("Duplicate address: %p\n", (void *)dup);
-	free(dup);
+	printf("%s (expected Hello 42!)\n", duplicate);
+	free(duplicate);
 	return (0);
 }
- */
+*/

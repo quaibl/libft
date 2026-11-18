@@ -18,3 +18,17 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	printf("9: %d, Z: %d (expected 1, 0)\n",
+		ft_isdigit('9'), ft_isdigit('Z'));
+	return (0);
+}
+*/

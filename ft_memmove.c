@@ -41,14 +41,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char str1[20];
+	char	s[] = "abcdef";
 
-	ft_memmove(str1, "ABCDEFGH", 9);
-	ft_memmove(str1 + 2, str1, 6);
-	printf("ft_memmove overlap: %s\n", str1);
+	ft_memmove(s + 2, s, 4);
+	printf("%s (expected ababcd)\n", s);
 	return (0);
-} */
+}
+*/

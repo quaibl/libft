@@ -29,17 +29,20 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (ft_strlen(src));
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	src[] = "Hello!";
-	char	dest[10];
-	size_t	l;
+	char	destination[5];
+	size_t	length;
 
-	l = ft_strlcpy(dest, src, 5);
-	printf("String copied: %s\n", dest);
-	printf("Return value (src length): %zu\n", l);
+	length = ft_strlcpy(destination, "Hello!", sizeof(destination));
+	printf("%s, length %zu (expected Hell, 6)\n",
+		destination, length);
 	return (0);
 }
- */
+*/

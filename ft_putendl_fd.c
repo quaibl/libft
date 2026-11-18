@@ -18,10 +18,15 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putchar_fd('\n', fd);
 }
 
-/* int	main(void)
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
 {
-	ft_putendl_fd("Hello World", 1);
-	ft_putendl_fd("42 School", 1);
-	ft_putendl_fd("Libft is fun", 1);
+	ft_putendl_fd("Hello 42!", 1);
 	return (0);
-} */
+}
+*/

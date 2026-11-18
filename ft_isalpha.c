@@ -18,3 +18,17 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	printf("A: %d, 7: %d (expected 1, 0)\n",
+		ft_isalpha('A'), ft_isalpha('7'));
+	return (0);
+}
+*/

@@ -98,3 +98,28 @@ char	**ft_split(char const *s, char c)
 	result[j] = NULL;
 	return (result);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	char	**words;
+	int		i;
+
+	words = ft_split("one,,two", ',');
+	if (!words)
+		return (1);
+	i = 0;
+	while (words[i])
+	{
+		printf("word %d: %s\n", i, words[i]);
+		free(words[i++]);
+	}
+	free(words);
+	return (0);
+}
+*/

@@ -12,11 +12,6 @@
 
 #include "libft.h"
 
-void	delete_content(void *content)
-{
-	free(content);
-}
-
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)
@@ -24,3 +19,22 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	t_list	*node;
+
+	node = ft_lstnew(ft_strdup("allocated"));
+	if (!node)
+		return (1);
+	ft_lstdelone(node, free);
+	printf("Node and allocated content released.\n");
+	return (0);
+}
+*/

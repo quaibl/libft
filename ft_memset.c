@@ -25,3 +25,19 @@ void	*ft_memset(void *b, int c, size_t n)
 	}
 	return (b);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	char	s[] = "hello";
+
+	ft_memset(s, 'X', 3);
+	printf("%s (expected XXXlo)\n", s);
+	return (0);
+}
+*/

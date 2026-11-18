@@ -30,6 +30,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	result = malloc(sizeof(char) * (substr_len + 1));
 	if (!result)
 		return (NULL);
+	i = 0;
 	while (i < substr_len)
 	{
 		result[i] = s[start + i];
@@ -39,16 +40,21 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (result);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	*str;
-	char	*sub;
+	char	*part;
 
-	str = "Hello World!";
-	sub = ft_substr(str, 3, 5);
-	printf("%s\n", sub);
+	part = ft_substr("abcdef", 2, 3);
+	if (!part)
+		return (1);
+	printf("%s (expected cde)\n", part);
+	free(part);
 	return (0);
 }
- */
+*/

@@ -30,15 +30,18 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-#/* include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	str1[] = "ABCDE";
-	char	str2[] = "ABCXE";
-
-	printf("ft_memcmp (match): %d\n", ft_memcmp(str1, str2, 3));
-	printf("ft_memcmp (diff) : %d\n", ft_memcmp(str1, str2, 4));
+	printf("equal: %d (expected 0)\n",
+		ft_memcmp("abc", "abc", 3));
+	printf("different: %d (expected negative)\n",
+		ft_memcmp("abc", "abd", 3));
 	return (0);
 }
- */
+*/

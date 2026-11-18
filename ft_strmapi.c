@@ -41,18 +41,26 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (res);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+static char	test_map(unsigned int index, char c)
+{
+	return ((char)(c + index));
+}
 
 int	main(void)
 {
-	char	*result;
+	char	*mapped;
 
-	result = ft_strmapi("hello", change_char);
-	if (!result)
+	mapped = ft_strmapi("abc", test_map);
+	if (!mapped)
 		return (1);
-	printf("Original: %s\n", "hello");
-	printf("Result:   %s\n", result);
-	free(result);
+	printf("%s (expected ace)\n", mapped);
+	free(mapped);
 	return (0);
 }
- */
+*/

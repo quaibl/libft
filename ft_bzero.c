@@ -24,15 +24,19 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
 	char	s[] = "hello";
 
-
-
 	ft_bzero(s, 2);
-	printf("%s\n", s + 2);
+	printf("bytes: %d %d %c (expected 0 0 l)\n",
+		s[0], s[1], s[2]);
 	return (0);
-} */
+}
+*/

@@ -54,32 +54,21 @@ char	*ft_itoa(int n)
 	return (res);
 }
 
-/* #include "libft.h"
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 int	main(void)
 {
-	char	*str;
+	char	*number;
 
-	str = ft_itoa(123);
-	printf("123  -> %s\n", str);
-	free(str);
-	str = ft_itoa(-456);
-	printf("-456 -> %s\n", str);
-	free(str);
-	str = ft_itoa(0);
-	printf("0    -> %s\n", str);
-	free(str);
-	str = ft_itoa(-7);
-	printf("-7   -> %s\n", str);
-	free(str);
-	str = ft_itoa(2147483647);
-	printf("INT_MAX -> %s\n", str);
-	free(str);
-	str = ft_itoa(-2147483648);
-	printf("INT_MIN -> %s\n", str);
-	free(str);
+	number = ft_itoa(-2147483648);
+	if (!number)
+		return (1);
+	printf("%s (expected -2147483648)\n", number);
+	free(number);
 	return (0);
 }
- */
+*/

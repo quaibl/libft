@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	while (big[i] && i < n)
 	{
 		j = 0;
-		while (little[j] && big[i + j] == little[j] && i + j < n)
+		while (little[j] && i + j < n && big[i + j] == little[j])
 		{
 			j++;
 		}
@@ -34,21 +34,17 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	return (NULL);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	*big;
-	char	*little;
-	char	*result;
-
-	big = "Hello World";
-	little = "World";
-	result = ft_strnstr(big, little, 11);
-	if (result != NULL)
-		printf("Found: %s\n", result);
-	else
-		printf("Not found\n");
+	printf("%s (expected 42)\n", ft_strnstr("hello42", "42", 7));
+	printf("limited: %p (expected nil)\n",
+		(void *)ft_strnstr("hello42", "42", 5));
 	return (0);
 }
- */
+*/

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libelf.h"
+#include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -23,21 +23,27 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	}
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-void	print_content(void *content)
+static void	test_print(void *content)
 {
-	printf("%s\n", (char *)content);
+	printf("%s ", (char *)content);
 }
-
 
 int	main(void)
 {
 	t_list	*head;
 
-	head = ft_lstnew("Apple");
-	ft_lstadd_back(&head, ft_lstnew("Banana"));
-	ft_lstadd_back(&head, ft_lstnew("Orange"));
-	ft_lstiter(head, print_content);
+	head = ft_lstnew("one");
+	ft_lstadd_back(&head, ft_lstnew("two"));
+	ft_lstiter(head, test_print);
+	printf("\n");
+	free(head->next);
+	free(head);
 	return (0);
-} */
+}
+*/

@@ -36,3 +36,30 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+static void	*test_copy(void *content)
+{
+	return (ft_strdup((char *)content));
+}
+
+int	main(void)
+{
+	t_list	*source;
+	t_list	*mapped;
+
+	source = ft_lstnew("hello");
+	mapped = ft_lstmap(source, test_copy, free);
+	if (!mapped)
+		return (1);
+	printf("%s (expected hello)\n", (char *)mapped->content);
+	ft_lstclear(&mapped, free);
+	free(source);
+	return (0);
+}
+*/

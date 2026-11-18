@@ -28,3 +28,21 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	t_list	*head;
+
+	head = ft_lstnew(ft_strdup("one"));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("two")));
+	ft_lstclear(&head, free);
+	printf("head is NULL: %d (expected 1)\n", head == NULL);
+	return (0);
+}
+*/

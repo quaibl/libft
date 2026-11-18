@@ -35,9 +35,9 @@ static int	ft_sign(const char *str, int *i)
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int		i;
+	int		sign;
+	long	result;
 
 	i = 0;
 	result = 0;
@@ -52,14 +52,17 @@ int	ft_atoi(const char *str)
 	return (result * sign);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	printf("%d\n", ft_atoi("123"));
-	printf("%d\n", ft_atoi("-456"));
-	printf("%d\n", ft_atoi("   +42"));
-	printf("%d\n", ft_atoi("42abc"));
+	printf("negative: %d (expected -42)\n", ft_atoi("  -42"));
+	printf("INT_MIN: %d (expected -2147483648)\n",
+		ft_atoi("-2147483648"));
 	return (0);
 }
- */
+*/

@@ -32,18 +32,25 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-/* #include "libft.h"
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
 #include <stdio.h>
+#include <stdlib.h>
+
+static void	test_upper(unsigned int index, char *c)
+{
+	(void)index;
+	if (*c >= 'a' && *c <= 'z')
+		*c -= 32;
+}
 
 int	main(void)
 {
-	char str[] = "hello";
+	char	text[] = "hello";
 
-	printf("Before: %s\n", str);
-
-	ft_striteri(str, change_char);
-
-	printf("After:  %s\n", str);
-
+	ft_striteri(text, test_upper);
+	printf("%s (expected HELLO)\n", text);
 	return (0);
-} */
+}
+*/

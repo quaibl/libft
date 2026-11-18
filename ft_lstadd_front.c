@@ -20,20 +20,21 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
 	t_list	*head;
 
-	head = ft_lstnew("Apple");
-	ft_lstadd_front(&head, ft_lstnew("Banana"));
-	ft_lstadd_front(&head, ft_lstnew("Mango"));
-	while (head)
-	{
-		printf("%s\n", (char *)head->content);
-		head = head->next;
-	}
+	head = ft_lstnew("second");
+	ft_lstadd_front(&head, ft_lstnew("first"));
+	printf("%s (expected first)\n", (char *)head->content);
+	free(head->next);
+	free(head);
 	return (0);
 }
- */
+*/

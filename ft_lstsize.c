@@ -24,3 +24,24 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	t_list	*first;
+	t_list	*second;
+
+	first = ft_lstnew("one");
+	second = ft_lstnew("two");
+	first->next = second;
+	printf("%u (expected 2)\n", ft_lstsize(first));
+	free(second);
+	free(first);
+	return (0);
+}
+*/

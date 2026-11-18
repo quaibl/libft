@@ -34,19 +34,20 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (dest_len + src_len);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	dest[15] = "Hello ";
-	char	*src;
-	size_t	result;
+	char	destination[10] = "ab";
+	size_t	length;
 
-	src = "World!";
-	result = ft_strlcat(dest, src, sizeof(dest));
-	printf("Destination: %s\n", dest);
-	printf("Source: %s\n", src);
-	printf("Return: %zu\n", result);
+	length = ft_strlcat(destination, "cdef", sizeof(destination));
+	printf("%s, length %zu (expected abcdef, 6)\n",
+		destination, length);
 	return (0);
 }
- */
+*/

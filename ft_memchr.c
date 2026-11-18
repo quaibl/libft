@@ -27,14 +27,19 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-/*#include <stdio.h>
-int main(void)
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
 {
-    char str[] = "Hello World";
-    char *res = ft_memchr(str, 'W', 11);
-    if (res)
-        printf("Found: %s\n", res);
-    else
-        printf("Not found\n");
-    return (0);
-}*/
+	char	s[] = "ABCDE";
+	char	*found;
+
+	found = ft_memchr(s, 'C', 5);
+	printf("offset: %ld (expected 2)\n", (long)(found - s));
+	return (0);
+}
+*/

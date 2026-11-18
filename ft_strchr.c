@@ -23,21 +23,22 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s + i);
 		i++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)s + i);
 	return (NULL);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	str[] = "bananna";
-
-	printf("%p\n", (void *)ft_strchr(str, 'H'));
-	printf("%p\n", (void *)ft_strchr(str, 'i'));
-	printf("%p\n", (void *)ft_strchr(str, 'x'));
-	printf("%p\n", (void *)ft_strchr(str, '\0'));
+	printf("%s (expected nana)\n", ft_strchr("banana", 'n'));
+	printf("missing: %p (expected nil)\n",
+		(void *)ft_strchr("banana", 'x'));
 	return (0);
 }
- */
+*/

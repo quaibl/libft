@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -23,3 +23,17 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	printf("hello: %zu, empty: %zu (expected 5, 0)\n",
+		ft_strlen("hello"), ft_strlen(""));
+	return (0);
+}
+*/

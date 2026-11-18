@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libelf.h"
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -24,15 +24,18 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
+/* Manual test: remove the comment delimiters only when testing. */
 /*
+#include "libft.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	printf("%d\n", ft_strncmp("hello", "hello", 5));
-	printf("%d\n", ft_strncmp("hello", "hallo", 5));
-	printf("%d\n", ft_strncmp("abc", "abd", 3));
-	printf("%d\n", ft_strncmp("abc", "abcd", 4));
-	printf("%d\n", ft_strncmp("abcd", "abc", 4));
+	printf("first 2: %d (expected 0)\n",
+		ft_strncmp("abc", "abd", 2));
+	printf("first 3 negative: %d\n",
+		ft_strncmp("abc", "abd", 3));
 	return (0);
-} */
+}
+*/

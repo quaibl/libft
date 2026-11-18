@@ -23,7 +23,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	while (start < end && ft_strchr(set, s1[start]))
 		start++;
-	while (end < start && ft_strchr(set, s1[end - 1]))
+	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
 	res = malloc(sizeof(char) * (end - start + 1));
 	if (!res)
@@ -38,3 +38,22 @@ char	*ft_strtrim(char const *s1, char const *set)
 	res[i] = '\0';
 	return (res);
 }
+
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	char	*trimmed;
+
+	trimmed = ft_strtrim("--hello--", "-");
+	if (!trimmed)
+		return (1);
+	printf("%s (expected hello)\n", trimmed);
+	free(trimmed);
+	return (0);
+}
+*/

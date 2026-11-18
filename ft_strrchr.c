@@ -17,28 +17,27 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	i;
 
 	i = ft_strlen(s);
-	if (c == '\0')
-		return ((char *)s + i);
-	i--;
-	while (i > 0)
+	while (1)
 	{
 		if ((unsigned char)s[i] == (unsigned char)c)
 			return ((char *)s + i);
+		if (i == 0)
+			break ;
 		i--;
 	}
 	return (NULL);
 }
 
-/* #include <stdio.h>
+/* Manual test: remove the comment delimiters only when testing. */
+/*
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int	main(void)
 {
-	char	str[] = "bananna";
-
-	printf("%s\n", ft_strrchr(str, 'b'));
-	printf("%s\n", ft_strrchr(str, 'a'));
-	printf("%p\n", (void *)ft_strrchr(str, 'x'));
-	printf("%p\n", (void *)ft_strrchr(str, '\0'));
+	printf("%s (expected a)\n", ft_strrchr("banana", 'a'));
+	printf("%s (expected abc)\n", ft_strrchr("abc", 'a'));
 	return (0);
 }
- */
+*/
