@@ -106,8 +106,4 @@ Never leave an active `main` function in the submitted library sources.
 
 ### Use of AI
 
-AI assistance was used as a learning and review aid: to clarify C concepts,
-review functions against the subject, identify potential edge cases, and
-suggest tests for memory and string handling. The author is responsible for
-understanding, testing, and explaining the submitted implementation during
-peer evaluation.
+AI assistance was used as a learning and review aid.
